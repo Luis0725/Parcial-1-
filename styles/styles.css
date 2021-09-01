@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-style:normal;
+    background-color: #e4f2fb;
+}
+
+img{
+    max-width: 100%;
+}
+
+.reproductor{
+    background-color: white;
+    width: 275px;
+    height: 494px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px gray;
+}   
+
+
+/*---------------------------ICONOSARRIBA----------------------------*/
+
+.iconosArriba{
+    display: flex;
+    position:absolute;
+    padding: 10px;
+}
+
+.iconosArriba .lupa{
+    transform: translateX(225px);
+}
+
+.iconosArriba a{
+    color: white;
+}
+
+.iconosArriba a:hover{
+    color: #d5102b;
+}
+
+/*---------------------------TITULOS----------------------------*/
+
+.titulos{
+    text-align: center;
+   
+}
+.titulos h2{
+    color: #d5102b;
+    font-size: 1.0em;
+    
+}
+
+.titulos h5{
+    color: #909090;
+    font-size: 0.7em;
+    margin: 7px;
+}
+
+/*---------------------------BARRA----------------------------*/
+
+.barra{
+    width: 80%;
+    height: 2.5px;
+    background:white;
+    border-radius: 50px;
+    transform: translate(10%, -3500%);
+}
+
+.barra .fill{
+    width: 25%;
+    height: 2.5px;
+    background: #d5102b;
+    border-radius: 50px;
+}
+
+.barra .punto{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(470%,-65%);
+    background: white;
+}
+
+/*---------------------------ICONOSPLAY----------------------------*/
+
+.playBoton{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 25px;  
+}
+
+.playBoton a{
+    color: #909090;
+    background-color: white;
+    padding: 8px 8px 8px 11px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px lightgray;
+}
+
+.playBoton .play-pausa{
+    color:#d5102b;
+    background-color: white;
+    padding: 15px 15px 15px 18px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px lightgray;
+    font-size: 1em;
+}
+.playBoton .play-pausa:active{
+    background-color: #c3c3c3
+}
+
+
+.playBoton .play-derecha{
+    font-size: 0.7em;
+    transform: translateX(20px);
+}
+.playBoton .play-derecha:hover{
+    color: #d5102b;
+}
+
+.playBoton .play-derecha:active{
+    background-color: #c3c3c3
+}
+
+
+.playBoton .play-izquierda{
+    font-size: 0.7em;
+    transform: translateX(-20px);
+}
+.playBoton .play-izquierda:hover{
+    color: #d5102b;
+}
+
+.playBoton .play-izquierda:active{
+    background-color: #c3c3c3
+}
+
+/*---------------------------ICONOSABAJO----------------------------*/
+
+.iconosAbajo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.iconosAbajo a{
+    color: #c3c3c3;
+    font-size: 0.8em;
+}
+
+.iconosAbajo a:hover{
+    color: #d5102b;
+}
+
+/*---------------------------DEMAS----------------------------*/
+
+.reproductorAudio{
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+}
+
+.hide{
+    visibility: hidden;
+    display: none;
+}
